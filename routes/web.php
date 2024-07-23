@@ -19,3 +19,6 @@ Route::get('name/{name?}', function ($name= 'Guest'){
     return('My name is '.$name);
 });
 
+Route::get('/about', function () {
+    return view('about');
+});
